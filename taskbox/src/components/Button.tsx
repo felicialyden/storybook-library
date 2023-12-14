@@ -2,7 +2,7 @@ import React from 'react'
 import './button.css';
 
 
-const Button = ({button: {text, primary, size}}) => {
+const Button = ({button: {text, size, primary}}) => {
   const mode = primary ? 'btn-primary' : 'btn-secondary';
 
   return (
