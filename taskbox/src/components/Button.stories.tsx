@@ -70,3 +70,13 @@ export const Large = {
   },
 };
 
+export const Disabled = {
+  args: {
+    button: {
+      text: 'Submit',
+      size: 'medium',
+      state: 'disabled'
+    },
+  },
+};
+

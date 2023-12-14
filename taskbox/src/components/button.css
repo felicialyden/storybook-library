@@ -35,3 +35,9 @@
   font-size: 16px;
   padding: 10px 22px;
 }
+
+.btn:disabled {
+    cursor: not-allowed;
+    background-color: rgb(188, 178, 178);
+    color: black;
+}

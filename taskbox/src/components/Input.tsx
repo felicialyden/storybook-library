@@ -1,14 +1,23 @@
-import React from 'react'
-import './input.css'
+import "./input.css";
 
-const Input = ({input: {placeholder}}) => {
+type InputProps = {
+  input: {
+    placeholder: string;
+    size: string;
+    state?: string;
+  };
+};
+
+const Input = ({ input: { placeholder, size, state } }: InputProps) => {
+  const inputState = state ? `input-${state}` : 'input-idle';
+  console.log(state)
   return (
-    <input 
-    className='input'
-    placeholder={placeholder}
-    >
-    </input>
-  )
-}
+    <input
+      className={["input", `input-${size}`, inputState].join(" ")}
+      placeholder={placeholder}
+      disabled={state === 'disabled'}
+    ></input>
+  );
+};
 
-export default Input
+export default Input;
