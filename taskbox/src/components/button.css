@@ -38,6 +38,6 @@
 
 .btn:disabled {
     cursor: not-allowed;
-    background-color: rgb(188, 178, 178);
-    color: black;
+    background-color: rgb(221, 213, 213);
+    color: rgb(116, 112, 112);
 }
